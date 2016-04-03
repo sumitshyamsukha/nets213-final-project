@@ -4,6 +4,11 @@ NETS 213 final project
 # Booksy
 Created by Jim Tse, Vatsal Jayaswal, and Sumit Shyamsukha.
 
+## Notes:
+
+Mockup images are courtesy Medium -- the UI will be modeled in a very similar manner.
+Flowchart describes how the major components fit in with each other. Readme describes these components.
+
 ## Major Components of Booksy
 
 * [Landing Page](#landing-page)
