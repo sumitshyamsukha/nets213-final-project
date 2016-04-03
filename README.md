@@ -87,10 +87,23 @@ A user loses reputation when:
 
 ## Quality Control <a id="quality-control"></a>
 
-The reputation system
+The reputation system essentially plays the most vital role in quality control.
+
+Quality control for comments will work similarly:
+
+* All comments can be upvoted or downvoted by any user.
+* A comment that receives a critical mass of downvotes will be displayed as a highly downvoted comment.
+* A comment can also be flagged as spam. Comments flagged as spam will also be displayed so.
+* Each comment will have associated with it a score value. This score value will be determined based on a certain statistic: lower bound of Wilson score confidence interval for a Bernoulli parameter. [Credit: http://www.evanmiller.org/how-not-to-sort-by-average-rating.html]
 
 ** Point Value: 4 **
 
 ## Aggregation <a id="aggregation"></a>
-Point Value: 4
+
+Comments are displayed based on the following set of rules:
+* The top three comments are those that are recommended by the most verified users.
+* All other comment threads will be displayed by using a "Display All Comments" button. These comments will be displayed based on the ranking system that is described in the QC module above.
+* Comments flagged as spam will be displayed as flagged as spam, but the user will have the ability to still click and view them.
+
+** Point Value: 4 **
 
