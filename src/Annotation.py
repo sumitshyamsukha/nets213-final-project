@@ -1,4 +1,4 @@
-class Annotation:
+class Annotation(object):
 
   def __init__(self):
       self.comments = []
