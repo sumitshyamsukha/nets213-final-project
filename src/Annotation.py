@@ -4,5 +4,3 @@ class Annotation:
       self.comments = []
       self.text = ""
       self.type = none
-
- 
