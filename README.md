@@ -1,6 +1,3 @@
-# nets213-final-project
-NETS 213 final project
-
 # Booksy
 Created by Jim Tse, Vatsal Jayaswal, and Sumit Shyamsukha.
 
@@ -101,6 +98,8 @@ Quality control for comments will work similarly:
 * A comment can also be flagged as spam. Comments flagged as spam will also be displayed so.
 * Each comment will have associated with it a score value. This score value will be determined based on a certain statistic: lower bound of Wilson score confidence interval for a Bernoulli parameter. [Credit: http://www.evanmiller.org/how-not-to-sort-by-average-rating.html]
 
+The Quality Control is split between the Aggregator and the Comment classes. The Comment class allows the user to mark a comment as spam, and the Aggregator, while printing comments, takes care of displaying "flagged as spam" for the comments that have been marked as spam.
+
 ** Point Value: 4 **
 
 ## Aggregation <a id="aggregation"></a>
@@ -109,6 +108,8 @@ Comments are displayed based on the following set of rules:
 * The top three comments are those that are recommended by the most verified users.
 * All other comment threads will be displayed by using a "Display All Comments" button. These comments will be displayed based on the ranking system that is described in the QC module above.
 * Comments flagged as spam will be displayed as flagged as spam, but the user will have the ability to still click and view them.
+
+The Aggregator class aggregates all of the comments and displays them with their "score" value. The "score" value is calculated based on the lower bound of the Wilson interval. The Comment class has a "_confidence" helper method to achieve this.
 
 ** Point Value: 4 **
 
