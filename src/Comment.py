@@ -6,3 +6,4 @@ class Comment:
       self.downvotes = 0
       self.score = 1
       self.isSpam = False
+      self.poster = None
