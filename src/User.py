@@ -10,4 +10,3 @@ class User(object):
       self.isVerified = False
       self.books = []
       self.comments = []
-

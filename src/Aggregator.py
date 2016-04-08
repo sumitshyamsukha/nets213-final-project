@@ -1,4 +1,3 @@
-from math import sqrt
 import heapq
 
 class Aggregator(object):
@@ -13,4 +12,7 @@ class Aggregator(object):
 
   def get_comments(self):
     for c in self.comments:
-      print "%f %s" % (c[0], c[1].text)
+      if c[1].spam is True:
+        print "Comment flagged as spam:  %s" % (c[1].text)
+      else:
+        print "%f %s" % (c[0], c[1].text)
