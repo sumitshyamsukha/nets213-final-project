@@ -1,0 +1,36 @@
+[{
+  "upvotes": 1,
+  "downvotes": 0,
+  "score": 1,
+  "poster": "Scott", 
+  "text": "Hello World", 
+  "isSpam": false
+}, {
+  "upvotes": 3,
+  "downvotes": 3,
+  "score": 0,
+  "poster": "Chris", 
+  "text": "Nets 213 is the best class", 
+  "isSpam": true
+}, {
+  "upvotes": 6,
+  "downvotes": 0,
+  "score": 6,
+  "poster": "Nicole", 
+  "text": "This book by Plato underlines the true meaning of ignorance", 
+  "isSpam": false
+}, {
+  "upvotes": 0,
+  "downvotes": 6,
+  "score": -6,
+  "poster": "Rob", 
+  "text": "I don't get the meaning of Crowdsourcing", 
+  "isSpam": false
+}, {
+  "upvotes": 4,
+  "downvotes": 2,
+  "score": 2,
+  "poster": "Mike", 
+  "text": "Hunting is my favorite sport!", 
+  "isSpam": true
+}]
