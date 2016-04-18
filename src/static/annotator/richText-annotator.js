@@ -35,7 +35,7 @@ Annotator.Plugin.RichText = (function(_super) {
 			menubar: false,
 			toolbar_items_size: 'small',
 			extended_valid_elements : "iframe[src|frameborder|style|scrolling|class|width|height|name|align|id]",
-    		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media rubric | code ",
+    		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media upvote | code ",
 		}
 	};
 
@@ -85,9 +85,9 @@ Annotator.Plugin.RichText = (function(_super) {
 				$('.mce-container').css('z-index','3090000000000000000');
 			});
 			//New button to add Rubrics of the url https://gteavirtual.org/rubric
-		    ed.addButton('rubric', {
+		    ed.addButton('upvote', {
 		        icon: 'rubric',
-		        title : 'Insert a rubric',
+		        title : 'Upvote',
 		        onclick: function() {
 		        	ed.windowManager.open({
 				        title: 'Insert a public rubric of the webside https://gteavirtual.org/rubric   ',

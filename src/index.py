@@ -1,8 +1,8 @@
 #!/usr/local/opt/python/bin/python-2.7
-from flask import Flask
-from flask import render_template
+from flask import Flask, Blueprint, render_template, abort
 
 app = Flask(__name__)
+store = Blueprint('annotator_store', )
 
 @app.route("/")
 def index():
