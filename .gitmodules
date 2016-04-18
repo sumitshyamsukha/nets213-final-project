@@ -1,3 +1,6 @@
 [submodule "src/lib/annotator-store"]
 	path = src/lib/annotator-store
 	url = https://github.com/nickstenning/annotator-store-flask.git
+[submodule "src/annotator-store"]
+	path = src/annotator-store
+	url = https://github.com/nickstenning/annotator-store-flask.git

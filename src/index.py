@@ -2,7 +2,13 @@
 from flask import Flask, Blueprint, render_template, abort
 
 app = Flask(__name__)
-store = Blueprint('annotator_store', )
+store = Blueprint('annotator_store', __name__)
+app.register_blueprint(store, url_prefix='/lib/annotator-store')
+
+
+@store.route('/store', methods=['GET'])
+def store():
+	return "hello world"
 
 @app.route("/")
 def index():
