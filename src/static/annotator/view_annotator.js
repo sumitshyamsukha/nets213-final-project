@@ -25,8 +25,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
   //constants
   var IMAGE_DELETE =  '../static/img/icono_eliminar.png',
-  IMAGE_DELETE_OVER = '/static/img/papelera_over.png',
-  SHARED_ICON = 'static/img/shared-icon.png';
+  IMAGE_DELETE_OVER = '../static/img/papelera_over.png',
+  SHARED_ICON = '../static/img/shared-icon.png';
 
   Annotator.Plugin.AnnotatorViewer = (function(_super) {
     __extends(AnnotatorViewer, _super);
@@ -126,7 +126,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
       var item;
       //item contains all the annotation information, this information is stored in an attribute called data-annotation.
       item = $(event.target).parents('.annotator-marginviewer-element');
-      if (type=='delete') return this.annotator.deleteAnnotation(item.data('annotation'));
+      console.log(item);
+      if (type=='delete') 
+      //return this.annotator.deleteAnnotation(item.data('annotation'));
       if (type=='edit') { //We want to transform de div to a textarea
         //Find the text field
         var annotator_textArea = item.find('div.anotador_text');

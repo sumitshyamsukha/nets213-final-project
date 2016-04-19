@@ -1,0 +1,16 @@
+<html>
+    <head>
+    <title> Booksy </title>
+    </head>
+    <body>
+        <h1> Booksy </h1>
+        {% for user in comments %}
+            <li> <a href="https://hypothes.is/stream?q={{ user }}"> {{ user }} </a> </li>
+            <form action="">
+                <input type="radio" name="vote" value="up"> Upvote <br>
+                <input type="radio" name="vote" value="down"> Downvote <br>
+            </form>
+        {% endfor %}
+
+    </body>
+</html>

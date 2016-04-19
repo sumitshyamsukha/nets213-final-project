@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booksy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='annotator/annotator.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='annotator/annotator.touch.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='js/jquery.upvote.css') }}" />
+  <script src="{{ url_for('static', filename='js/jquery-1.12.3.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.i18n.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.slimscroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.dateFormat.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.upvote.js') }}"></script>
+  <script src="{{ url_for('static', filename='locale/en/annotator.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/annotator-full.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/annotator.touch.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/annotator.offine.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/tinymce.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/richText-annotator.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/richEditor.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/categories.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/view_annotator.js') }}"></script>
+  <script src="{{ url_for('static', filename='annotator/annotator.store.min.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='annotator/richText-annotator.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+  <div id="content">
+    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+
+    <p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+
+    <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+  </div>
+
+  <script>
+    jQuery("#content").annotator().annotator('addPlugin', 'Touch', {
+      force: location.search.indexOf('force') > -1,
+      useHighlighter: location.search.indexOf('highlighter') > -1
+    });
+
+
+    var optionsRichText = {
+        tinymce: {
+          selector: "li.annotator-item textarea",
+          plugins: "media image insertdatetime link code",
+          menubar: false,
+          toolbar_items_size: 'small',
+          extended_valid_elements : "iframe[src|frameborder|style|scrolling|class|width|height|name|align|id]",
+          toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | code",
+      }
+    };
+
+    var annotator = $('#content').annotator().data('annotator'); 
+    var propietary = 'demoUser';
+    annotator.addPlugin('Permissions', {
+        user: propietary,
+        permissions: {
+            'read': [propietary],
+            'update': [propietary],
+            'delete': [propietary],
+            'admin': [propietary]
+     },
+     showViewPermissionsCheckbox: true,
+     showEditPermissionsCheckbox: false
+    });
+
+    
+    annotator.addPlugin('Store', {
+      // The endpoint of the store on your server.
+      prefix: '/store/annotations',
+
+      // Attach the uri of the current page to all annotations to allow search.
+      annotationData: {
+        'uri': 'http://this/document/only'
+      },
+
+      // This will perform a "search" action when the plugin loads. Will
+      // request the last 20 annotations for the current url.
+      // eg. /store/endpoint/search?limit=20&uri=http://this/document/only
+      loadFromSearch: {
+        'limit': 20,
+        'uri': 'http://this/document/only'
+      }, 
+
+    showViewPermissionsCheckbox: false,
+
+    showEditPermissionsCheckbox: false
+    });
+
+
+    jQuery('#content').annotator().annotator('addPlugin','RichText', optionsRichText);
+    jQuery('#content').annotator().annotator('addPlugin','RichEditor');
+    jQuery('#content').annotator().annotator('addPlugin', 'AnnotatorViewer');
+    $('#anotacions-uoc-panel').slimscroll({height: '100%'});
+
+    var annotator = jQuery("#content").data('annotator');
+  </script>
+
+</body>
+</html>
