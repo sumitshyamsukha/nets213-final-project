@@ -1,5 +1,8 @@
 #!/usr/local/opt/python/bin/python-2.7
 from flask import Flask, render_template, request
+import pickle
+import operator
+from math import sqrt
 
 app = Flask(__name__)
 
@@ -22,6 +25,64 @@ def comments():
             if line != '' and line is not None and len(line) > 1:
                 comments.append(line)
     return render_template('/comments.html', comments=comments)
+
+@app.route('/comments', methods=['POST'])
+def comments_post():
+    comments = []
+    try:
+        pkl_file = open("ratings.pkl", "rb")
+        ratings = pickle.load(pkl_file)
+        pkl_file.close()
+    except:
+        ratings = {}
+    with open('test.txt', 'r') as f:
+        for line in f:
+            if line != '' and line is not None and len(line) > 1:
+                comments.append(line.strip())
+    for i in request.form:
+        if i.strip() in comments:
+            if i.strip() in ratings:
+                ratings[i.strip()].append(request.form[i])
+            else:
+                ratings[i.strip()] = [request.form[i]]
+    
+    output = open('ratings.pkl', 'wb')
+    pickle.dump(ratings, output)
+    output.close()
+    return "Thank you for your input! Click here to return to the homepage."
+
+@app.route('/ratings')
+def ratings():
+    try:
+        pkl_file = open("ratings.pkl", "rb")
+        ratings = pickle.load(pkl_file)
+        pkl_file.close()
+    except:
+        ratings = {}
+    confidence = []
+    for i in ratings:
+        u = 0
+        d = 0
+        for j in ratings[i]:
+            if 'up' in j:
+                u = u + 1
+            if 'down' in j:
+                d = d + 1
+        confidence.append((i, _confidence(u, d)))
+    sorted_ratings = sorted(confidence, key=operator.itemgetter(1), reverse=True)
+    print sorted_ratings
+    return render_template('/ratings.html', ratings=sorted_ratings)
+
+# Source: http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
+def _confidence(ups, downs):
+    n = ups + downs
+
+    if n == 0:
+        return 0
+
+    z = 1.96 #1.44 = 85%, 1.96 = 95%
+    phat = float(ups) / n
+    return ((phat + z*z/(2*n) - z * sqrt((phat*(1-phat)+z*z/(4*n))/n))/(1+z*z/n))
 
 @app.route("/pdfview")
 @app.route('/pdfview/<name>')

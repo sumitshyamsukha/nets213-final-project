@@ -4,13 +4,16 @@
     </head>
     <body>
         <h1> Booksy </h1>
+        <h2> Submit User Ratings </h2>
+        <form action="" method="POST">
         {% for user in comments %}
             <li> <a href="https://hypothes.is/stream?q={{ user }}"> {{ user }} </a> </li>
-            <form action="">
-                <input type="radio" name="vote" value="up"> Upvote <br>
-                <input type="radio" name="vote" value="down"> Downvote <br>
-            </form>
+            <fieldset id="{{user}}">
+                <input type="radio" name="{{user}}" value="up"> Upvote <br>
+                <input type="radio" name="{{user}}" value="down"> Downvote <br>
+            </fieldset>
         {% endfor %}
-
+        <input type="submit" name="my-form" value="Submit">
+        </form>
     </body>
 </html>

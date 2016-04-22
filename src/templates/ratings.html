@@ -1,0 +1,15 @@
+<html>
+    <head>
+    <title> Booksy </title>
+    </head>
+    <body>
+        <h1> Booksy </h1>
+        <h2> User Ratings </h2>
+        {% for key in ratings %}
+            <li> 
+                <a href="https://hypothes.is/stream?q={{ key[0] }}"> {{ key[0] }} </a> 
+                <p> Confidence Rating: {{ key[1] }} </p> 
+            </li>
+        {% endfor %}
+    </body>
+</html>
