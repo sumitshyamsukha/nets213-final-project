@@ -15,7 +15,7 @@ def index_post():
     text = request.form['text']
     with open('test.txt', 'a') as f:
         f.write("\n"+text+"\n")
-    return "Thank you! Click the back button to go back!"
+    return render_template('thanks.html')
 
 @app.route('/comments')
 def comments():
@@ -49,7 +49,7 @@ def comments_post():
     output = open('ratings.pkl', 'wb')
     pickle.dump(ratings, output)
     output.close()
-    return "Thank you for your input! Click here to return to the homepage."
+    return render_template('thanks.html')
 
 @app.route('/ratings')
 def ratings():
