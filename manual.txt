@@ -1,0 +1,19 @@
+Instruction Manual for How to Use Booksy:
+
+Booksy can be accessed at: sumitz.pythonanywhere.com
+
+1) First, the user must create an account on Hypothes.is. The account will store all information of the user, from comments to groups involved to even reputations. To do so, please sign up for an account, fill in all necessary information, and verify the account's email. The user will then have an account for Booksy.
+
+2) The user must sign into his account in order to use Booksy. Afterwards, the user will be able to annotate and comment on any book available on the website' essentially, these comments, annotations, and highlights will act as the user's contributions to the information stored for a particular book. Books are represented currently as PDF's, where certain operations by users can be made. 
+
+3) The user can comment, annotate, highlight, and even upvote/downvote other comments in any particular book on the website. To highlight a sequences of words in the book, the user must select a sequence of words and press the highlight button to highlight the words selected.
+
+4) The user then has a choice to annotate what he has highlighted. To do so, the user must press the annotate button, which will pop up a text field in which the user can write his annotations. These annotations can be edited by basic features such as font changes and bold/italicize. These annotations will then be sent to the global comment section for the book, which is stored in the sidebar of the PDF. Of course, the highlighted text that corresponds to the annotations is referenced here, as well.
+
+5) The user can also write comments in the sidebar without the need to annotate or highlight any text. These comments are for comments about the whole book in general and not just a particular seqeunce of sentences or paragraphs. In this scenario, the sidebar comment section acts like a chat room. Note that these annotations and comments help contribute to the aggregation of the crowdsourcing.
+
+6) Users can also downvote and upvote other users in order to maintain quality control of the crowdsourcing. To do so, users are sent to a separate website that is linked to the all the user's comments. Here, users can upvote and downvote other users.
+
+7) Once you've finished reading the book, making annotations and comments, and viewing other users comments, go back to the home page. Once there, click on the "Submit Ratings" button to submit ratings for other users. Based on the comments you have read, upvote or downvote users. When finished, hit submit. Then, head back to the homepage. 
+
+8) Now, to view the ratings for the users, click the View Ratings button. Here, you can see the users rated from highest to lowest. 

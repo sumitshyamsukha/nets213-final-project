@@ -1,15 +1,22 @@
 <html>
 <head>
+<title> Booksy </title>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
 </head>
 <body>
-     <h1>Booksy</h1>
-    <h2>Enter your <a href="https://hypothes.is/">Hypothes.is</a> username</h2>
-    <form action="." method="POST">
-        <input type="text" name="text">
-        <input type="submit" name="my-form" value="Send">
-    </form>
-<a href="/pdfview">Structure and Interpretation of Computer Programs</a>
-<a href="/comments">Submit Ratings</a>
-<a href="/ratings">View User Ratings</a>
+     <h1 style="float: center; text-align: center">Booksy</h1>
+
+     <div class="container">
+
+	    <h2>Enter your <a href="https://hypothes.is/">Hypothes.is</a> username</h2>
+	    <form action="." method="POST">
+	        <input type="text" name="text">
+	        <input type="submit" name="my-form" value="Send">
+	    </form>
+    
+		<a href="/pdfview">Structure and Interpretation of Computer Programs</a> <br>
+		<a href="/comments">Submit Ratings</a> <br>
+		<a href="/ratings">View User Ratings</a>
+	</div>
 </body>
 </html>

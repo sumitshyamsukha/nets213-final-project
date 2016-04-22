@@ -1,10 +1,14 @@
 <html>
     <head>
     <title> Booksy </title>
+    <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
     <body>
-        <h1> Booksy </h1>
+        <h1 style="float: center; text-align: center"> Booksy </h1>
+        <div class="container">
+        
         <h2> Submit User Ratings </h2>
+        
         <form action="" method="POST">
         {% for user in comments %}
             <li> <a href="https://hypothes.is/stream?q={{ user }}"> {{ user }} </a> </li>
@@ -15,5 +19,7 @@
         {% endfor %}
         <input type="submit" name="my-form" value="Submit">
         </form>
+        </div>
+
     </body>
 </html>

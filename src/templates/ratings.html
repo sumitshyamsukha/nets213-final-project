@@ -1,9 +1,11 @@
 <html>
     <head>
     <title> Booksy </title>
+    <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
     <body>
-        <h1> Booksy </h1>
+        <h1 style="float: center; text-align: center"> Booksy </h1>
+        <div class="container"> 
         <h2> User Ratings </h2>
         {% for key in ratings %}
             <li> 
@@ -11,5 +13,6 @@
                 <p> Confidence Rating: {{ key[1] }} </p> 
             </li>
         {% endfor %}
+        </div>
     </body>
 </html>

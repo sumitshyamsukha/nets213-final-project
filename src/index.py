@@ -70,7 +70,6 @@ def ratings():
                 d = d + 1
         confidence.append((i, _confidence(u, d)))
     sorted_ratings = sorted(confidence, key=operator.itemgetter(1), reverse=True)
-    print sorted_ratings
     return render_template('/ratings.html', ratings=sorted_ratings)
 
 # Source: http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
