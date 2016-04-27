@@ -2,6 +2,8 @@
 from flask import Flask, render_template, request
 import pickle
 import operator
+import urllib2
+import json
 from math import sqrt
 
 app = Flask(__name__)
@@ -45,7 +47,7 @@ def comments_post():
                 ratings[i.strip()].append(request.form[i])
             else:
                 ratings[i.strip()] = [request.form[i]]
-    
+
     output = open('ratings.pkl', 'wb')
     pickle.dump(ratings, output)
     output.close()
