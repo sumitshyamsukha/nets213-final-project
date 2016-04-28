@@ -6,6 +6,7 @@ import re
 
 api_key = '6879-6446b8b4f00a2ecb7744e4c4fa211ff8'
 corpus = {}
+users = []
 
 def construct_api_call(user):
   return 'https://hypothes.is/api/search?limit=1000&user=' + str(user)
@@ -27,17 +28,24 @@ def get_comments(user) :
   comments = []
   for row in response['rows']:
     text = row['text'].strip()
+    target = row['target']
+    exact = 'null'
+    for item in target:
+    	if 'selector' in item:
+    		for selector in item['selector']:
+    			if 'exact' in selector:
+    				exact = selector['exact']
+    				break
     if text != None and text != '':
-      comments.append(text)
+      comments.append((exact.strip().encode('utf-8'), text))
   return comments
 
-def get_all_comments(users):
+def get_all_comments():
   for user in users:
     if user not in corpus:
       corpus[user] = get_comments(user)
 
 def get_all_users(): 
-  users = []
   with open('users.txt', 'r') as f:
     while True:
       user = f.readline()
@@ -45,17 +53,27 @@ def get_all_users():
         break
       if user not in users:
         users.append(user)
-  get_all_comments(users)
+  get_all_comments()
 
 def construct_csv():
   get_all_users()
   with open('data.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(['User', 'Comments'])
+    writer.writerow(['User', 'Annotation', 'Comment'])
     for user in corpus:
       if corpus[user] is not None:
         for comment in corpus[user]:
-          writer.writerow([user, comment])
+          writer.writerow([user, comment[0], comment[1]])
     csvfile.close()
 
-construct_csv()
+def construct_user_csv():
+	get_all_users()
+	with open('users.csv', 'wb') as csvfile:
+		writer = csv.writer(csvfile)
+		writer.writerow(['Username'])
+		for user in users:
+			writer.writerow([user])
+		csvfile.close()
+
+#construct_csv()
+construct_user_csv()

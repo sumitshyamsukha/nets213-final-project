@@ -1,83 +1,83 @@
-User,Comments
+User,Annotation,Comment
 "wimbo
-",this is stimulating
+","It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating
 "wimbo
-",Hellooooo
+",thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo
 "wimbo
-",delete this spam please
+",null,delete this spam please
 "wimbo
-",hi
+",null,hi
 "mulanhe
-",What are they going to do with the system though?
+","We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?
 "mulanhe
-",It must be pretty hard to speed date.
+","Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.
 "mulanhe
-","Yeah, it seems unfortunate"
+",null,"Yeah, it seems unfortunate"
 "mulanhe
-",Why do men ask so many questions?
+","men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?
 "mulanhe
-",That's pretty funny.
+",A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.
 "mulanhe
-",They probably could have explained how their Naive Bayes worked.
+","Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.
 "mulanhe
-",I didn't even know this was a word.
+","Negemotion,",I didn't even know this was a word.
 "mulanhe
-",What is LIWC?
+",LIWC,What is LIWC?
 "mulanhe
-",What do these stand for?
+",F0 and RMS,What do these stand for?
 "mulanhe
-",So they have another paper on this topic
+","Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic
 "gaga
-",so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.
+",human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.
 "gaga
-",parallel finding for women
+","expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women
 "gaga
-",basically what is indicative of male flirtation
+","Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation
 "gaga
-",important bc this is how they want to model the brain. this section delves deeper into that
+",we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that
 "gaga
-",important factor in method of classification
+",We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification
 "gaga
-",what they did during research
+",we trained bi-nary classifiers to predict both perception and in-tention,what they did during research
 "gaga
-",how the research was conducted
+",report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted
 "lsilb
-",Are certain features not always subjective?
+","The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?
 "lsilb
-","This is interesting, and pretty straightforward and logical"
+","Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical"
 "lsilb
-",it would also be interesting to look into social media platform dates such as tinder
+",SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder
 "crowdworker11201
-",This study is based off of 946 speed dates
+","The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates
 "crowdworker11201
-",They used a relatively small dataset for this experiment. Only three speed dating sessions.
+","The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.
 "crowdworker11201
-",Thanks for the heads up!
+",null,Thanks for the heads up!
 "agraffy
-",Fascinating!
+",null,Fascinating!
 "agraffy
-",Interesting!
+",We ran our binary classification exper-iments to predict this output variable,Interesting!
 "davidcao
-",lots of words
+","n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words
 "davidcao
-",same
+","BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same
 "davidcao
-",Scary
+",p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary
 "sumitz
-","Hello, world!"
+",null,"Hello, world!"
 "sumitz
-",Booksy!
+",null,Booksy!
 "sumitz
-",test note
+",t will display only when c,test note
 "sumitz
-",This is page note.
+",null,This is page note.
 "sumitz
-",sadads
+",ives. To them we o,sadads
 "sumitz
-",asdasd
+",an infinite amo,asdasd
 "sumitz
-",sad
+",he same rat,sad
 "sumitz
-",Sup WIMBO
+",null,Sup WIMBO
 "sumitz
-",ss
+",rreitmai,ss
