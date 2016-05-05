@@ -10,13 +10,16 @@
         <h2> Submit User Ratings </h2>
         
         <form action="" method="POST">
+        <ul class="list-group">
         {% for user in comments %}
-            <li> <a href="https://hypothes.is/stream?q={{ user }}"> {{ user }} </a> </li>
+            <li class="list-group-item"> <a href="https://hypothes.is/stream?q={{ user }}"> {{ user }} </a> 
             <fieldset id="{{user}}">
                 <input type="radio" name="{{user}}" value="up"> Upvote <br>
                 <input type="radio" name="{{user}}" value="down"> Downvote <br>
             </fieldset>
+            </li>
         {% endfor %}
+        </ul>
         <input type="submit" name="my-form" value="Submit">
         </form>
         <h2> Click <a href="/"> here </a> to go back! </h2>

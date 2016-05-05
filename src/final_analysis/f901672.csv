@@ -1,0 +1,411 @@
+_unit_id,_created_at,_golden,_id,_missed,_started_at,_tainted,_channel,_trust,_worker_id,_country,_region,_city,_ip,upvotedownvote,annotation,comment,comments,upvotedownvote_gold,user
+941541214,4/27/2016 08:17:05,false,1970014070,,4/27/2016 08:16:38,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,"It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating,,,"wimbo
+"
+941541214,4/27/2016 08:17:33,false,1970014345,,4/27/2016 08:16:48,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating,,,"wimbo
+"
+941541214,4/27/2016 08:17:57,false,1970014537,,4/27/2016 08:16:49,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,"It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating,,,"wimbo
+"
+941541214,4/27/2016 08:19:47,false,1970015547,,4/27/2016 08:16:51,false,elite,0.6,36378612,BIH,01,Tuzla,109.175.20.211,Upvote comment,"It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating,,,"wimbo
+"
+941541214,4/27/2016 08:20:06,false,1970015771,,4/27/2016 08:18:04,false,elite,0.6,32336418,RUS,78,Tyumen,85.15.189.13,Upvote comment,"It’s Not You, it’s Me: Detecting Flirting and its Misperception inSpeed-DatesRajesh RanganathComputer Science DepartmentStanford Universityrajeshr@cs.stanford.eduDan JurafskyLinguistics DepartmentStanford Universityjurafsky@stanford.eduDan McFarlandSchool of EducationStanford Universitydmcfarla@stanford.eduAbstractAutomatically detecting human social in-tentions  from  spoken  conversation  is  animportant  task  for  dialogue  understand-ing.    Since  the  social  intentions  of  thespeaker may differ from what is perceivedby the hearer, systems that analyze humanconversations  need  to  be  able  to  extractboth the perceived and the intended socialmeaning.   We  investigate  this  differencebetween intention and perception by usinga spoken corpus of speed-dates in whichboth the speaker and the listener rated thespeaker on flirtatiousness.   Our flirtation-detection system uses prosodic, dialogue,and  lexical  features  to  detect  a  speaker’sintent to flirt with up to 71.5% accuracy,significantly  outperforming  the  baseline,but  also  outperforming  the  human  inter-locuters. Our system addresses lexical fea-ture  sparsity  given  the  small  amount  oftraining data by using an autoencoder net-work to map sparse lexical feature vectorsinto 30 compressed features.   Our analy-sis shows that humans are very poor per-ceivers of intended flirtatiousness, insteadoften projecting their own intended behav-ior onto their interlocutors.1    IntroductionDetecting human social meaning is a difficult taskfor  automatic  conversational  understanding  sys-tems.  One cause of this difficulty is the pervasivedifference between intended social signals and theuptake by the perceiver.  The cues that a speakermay  use  to  attempt  to  signal  a  particular  socialmeaning may not be the cues that the hearer fo-cuses on, leading to misperception.In  order  to  understand  the  impact  of  this  dif-ference between perception and intention, in thispaper we describe machine learning models thatcan detect both the social meaning intended by thespeaker and the social meaning perceived by thehearer.  Automated systems that detect and modelthese differences can lead both to richer sociallyaware  systems  for  conversational  understandingand mo",this is stimulating,,,"wimbo
+"
+941541215,4/27/2016 08:17:57,false,1970014535,,4/27/2016 08:17:43,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo,,,"wimbo
+"
+941541215,4/27/2016 08:18:12,false,1970014705,,4/27/2016 08:17:34,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo,,,"wimbo
+"
+941541215,4/27/2016 08:18:13,false,1970014707,,4/27/2016 08:17:33,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo,,,"wimbo
+"
+941541215,4/27/2016 08:18:15,false,1970014714,,4/27/2016 08:17:45,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo,,,"wimbo
+"
+941541215,4/27/2016 08:24:47,false,1970018015,,4/27/2016 08:17:49,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Downvote comment,thly they fit with other programs in the creation of still greaterprograms. The programmer must seek both p,Hellooooo,,,"wimbo
+"
+941541216,4/27/2016 08:17:42,false,1970014415,,4/27/2016 08:17:27,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,delete this spam please,,,"wimbo
+"
+941541216,4/27/2016 08:17:48,false,1970014485,,4/27/2016 08:17:25,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,null,delete this spam please,,,"wimbo
+"
+941541216,4/27/2016 08:17:48,false,1970014493,,4/27/2016 08:17:31,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Downvote comment,null,delete this spam please,,,"wimbo
+"
+941541216,4/27/2016 08:19:18,false,1970015346,,4/27/2016 08:17:32,false,elite,0.5333,29829226,IDN,08,Surabaya,115.178.238.113,Upvote comment,null,delete this spam please,,,"wimbo
+"
+941541216,4/27/2016 08:19:44,false,1970015533,,4/27/2016 08:17:23,false,clixsense,0.56,19298085,IND,02,Hyderabad,183.82.227.84,Downvote comment,null,delete this spam please,,,"wimbo
+"
+941541217,4/27/2016 08:18:25,false,1970014766,,4/27/2016 08:18:11,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,hi,,,"wimbo
+"
+941541217,4/27/2016 08:18:32,false,1970014815,,4/27/2016 08:17:58,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Downvote comment,null,hi,,,"wimbo
+"
+941541217,4/27/2016 08:18:36,false,1970014869,,4/27/2016 08:18:14,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,null,hi,,,"wimbo
+"
+941541217,4/27/2016 08:18:55,false,1970015096,,4/27/2016 08:18:14,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,null,hi,,,"wimbo
+"
+941541217,4/27/2016 08:21:52,false,1970016698,,4/27/2016 08:18:09,false,clixsense,0.68,32332502,RUS,06,Arkhangelsk,62.192.252.70,Downvote comment,null,hi,,,"wimbo
+"
+941541218,4/27/2016 08:18:25,false,1970014768,,4/27/2016 08:18:11,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?,,,"mulanhe
+"
+941541218,4/27/2016 08:18:32,false,1970014808,,4/27/2016 08:17:58,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,"We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?,,,"mulanhe
+"
+941541218,4/27/2016 08:18:36,false,1970014870,,4/27/2016 08:18:14,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,"We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?,,,"mulanhe
+"
+941541218,4/27/2016 08:18:55,false,1970015091,,4/27/2016 08:18:14,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?,,,"mulanhe
+"
+941541218,4/27/2016 08:21:52,false,1970016702,,4/27/2016 08:18:09,false,clixsense,0.68,32332502,RUS,06,Arkhangelsk,62.192.252.70,Upvote comment,"We  have  presented  a  new  system  that  is  able  topredict flirtation intention better than humans can,despite humans having access to vastly richer in-formation",What are they going to do with the system though?,,,"mulanhe
+"
+941541219,4/27/2016 08:17:25,false,1970014252,,4/27/2016 08:17:05,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.,,,"mulanhe
+"
+941541219,4/27/2016 08:17:26,false,1970014257,,4/27/2016 08:17:08,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.,,,"mulanhe
+"
+941541219,4/27/2016 08:17:32,false,1970014339,,4/27/2016 08:17:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,"Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.,,,"mulanhe
+"
+941541219,4/27/2016 08:18:15,false,1970014715,,4/27/2016 08:17:19,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.,,,"mulanhe
+"
+941541219,4/27/2016 08:22:30,false,1970016961,,4/27/2016 08:17:22,false,clixsense,0.7,7837812,SRB,00,Belgrade,178.148.62.255,Downvote comment,"Speakers  instead  base  their  judgments  on  theirown behavior or intentions, perhaps because of abias to maintain consistency in attitudes and rela-tions (Festinger, 1957; Taylor, 1970) or to assumethere is reciprocation in interpersonal perceptions",It must be pretty hard to speed date.,,,"mulanhe
+"
+941541220,4/27/2016 08:17:42,false,1970014416,,4/27/2016 08:17:27,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,"Yeah, it seems unfortunate",,,"mulanhe
+"
+941541220,4/27/2016 08:17:48,false,1970014486,,4/27/2016 08:17:25,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,null,"Yeah, it seems unfortunate",,,"mulanhe
+"
+941541220,4/27/2016 08:17:48,false,1970014491,,4/27/2016 08:17:31,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,null,"Yeah, it seems unfortunate",,,"mulanhe
+"
+941541220,4/27/2016 08:19:18,false,1970015347,,4/27/2016 08:17:32,false,elite,0.5333,29829226,IDN,08,Surabaya,115.178.238.113,Upvote comment,null,"Yeah, it seems unfortunate",,,"mulanhe
+"
+941541220,4/27/2016 08:19:44,false,1970015539,,4/27/2016 08:17:23,false,clixsense,0.56,19298085,IND,02,Hyderabad,183.82.227.84,Downvote comment,null,"Yeah, it seems unfortunate",,,"mulanhe
+"
+941541221,4/27/2016 08:17:25,false,1970014253,,4/27/2016 08:17:05,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,"men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?,,,"mulanhe
+"
+941541221,4/27/2016 08:17:26,false,1970014258,,4/27/2016 08:17:08,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,"men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?,,,"mulanhe
+"
+941541221,4/27/2016 08:17:32,false,1970014335,,4/27/2016 08:17:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,"men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?,,,"mulanhe
+"
+941541221,4/27/2016 08:18:15,false,1970014725,,4/27/2016 08:17:19,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?,,,"mulanhe
+"
+941541221,4/27/2016 08:22:30,false,1970016957,,4/27/2016 08:17:22,false,clixsense,0.7,7837812,SRB,00,Belgrade,178.148.62.255,Downvote comment,"men ask more questions when they say they areflirting,  women  ask  fewer,  although  they  do  usemore repair questions, which men do not",Why do men ask so many questions?,,,"mulanhe
+"
+941541222,4/27/2016 08:18:25,false,1970014769,,4/27/2016 08:18:11,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.,,,"mulanhe
+"
+941541222,4/27/2016 08:18:32,false,1970014810,,4/27/2016 08:17:58,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.,,,"mulanhe
+"
+941541222,4/27/2016 08:18:36,false,1970014868,,4/27/2016 08:18:14,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.,,,"mulanhe
+"
+941541222,4/27/2016 08:18:55,false,1970015090,,4/27/2016 08:18:14,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.,,,"mulanhe
+"
+941541222,4/27/2016 08:21:52,false,1970016700,,4/27/2016 08:18:09,false,clixsense,0.68,32332502,RUS,06,Arkhangelsk,62.192.252.70,Upvote comment,A largenegative weight indicates the conversation focusedon the mundane details of grad student life.,That's pretty funny.,,,"mulanhe
+"
+941541223,4/27/2016 08:17:05,false,1970014067,,4/27/2016 08:16:38,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.,,,"mulanhe
+"
+941541223,4/27/2016 08:17:33,false,1970014342,,4/27/2016 08:16:48,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.,,,"mulanhe
+"
+941541223,4/27/2016 08:17:57,false,1970014540,,4/27/2016 08:16:49,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,"Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.,,,"mulanhe
+"
+941541223,4/27/2016 08:19:47,false,1970015548,,4/27/2016 08:16:51,false,elite,0.6,36378612,BIH,01,Tuzla,109.175.20.211,Upvote comment,"Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.,,,"mulanhe
+"
+941541223,4/27/2016 08:20:06,false,1970015764,,4/27/2016 08:18:04,false,elite,0.6,32336418,RUS,78,Tyumen,85.15.189.13,Downvote comment,"Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative",They probably could have explained how their Naive Bayes worked.,,,"mulanhe
+"
+941541224,4/27/2016 08:18:25,false,1970014765,,4/27/2016 08:18:11,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,"Negemotion,",I didn't even know this was a word.,,,"mulanhe
+"
+941541224,4/27/2016 08:18:32,false,1970014805,,4/27/2016 08:17:58,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Downvote comment,"Negemotion,",I didn't even know this was a word.,,,"mulanhe
+"
+941541224,4/27/2016 08:18:36,false,1970014872,,4/27/2016 08:18:14,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,"Negemotion,",I didn't even know this was a word.,,,"mulanhe
+"
+941541224,4/27/2016 08:18:55,false,1970015087,,4/27/2016 08:18:14,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,"Negemotion,",I didn't even know this was a word.,,,"mulanhe
+"
+941541224,4/27/2016 08:21:52,false,1970016696,,4/27/2016 08:18:09,false,clixsense,0.68,32332502,RUS,06,Arkhangelsk,62.192.252.70,Upvote comment,"Negemotion,",I didn't even know this was a word.,,,"mulanhe
+"
+941541225,4/27/2016 08:18:10,false,1970014687,,4/27/2016 08:17:58,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,LIWC,What is LIWC?,,,"mulanhe
+"
+941541225,4/27/2016 08:18:22,false,1970014754,,4/27/2016 08:17:49,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,LIWC,What is LIWC?,,,"mulanhe
+"
+941541225,4/27/2016 08:20:05,false,1970015769,,4/27/2016 08:19:37,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,LIWC,What is LIWC?,,,"mulanhe
+"
+941541225,4/27/2016 08:20:22,false,1970015948,,4/27/2016 08:17:55,false,clixsense,0.75,34319651,ARE,03,Dubai,83.110.232.180,Downvote comment,LIWC,What is LIWC?,,,"mulanhe
+"
+941541225,4/27/2016 08:23:17,false,1970017350,,4/27/2016 08:17:58,false,getpaid,0.68,36358931,VNM,20,Ho Chi Minh City,113.173.97.145,Downvote comment,LIWC,What is LIWC?,,,"mulanhe
+"
+941541226,4/27/2016 08:17:42,false,1970014413,,4/27/2016 08:17:27,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,F0 and RMS,What do these stand for?,,,"mulanhe
+"
+941541226,4/27/2016 08:17:48,false,1970014489,,4/27/2016 08:17:25,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,F0 and RMS,What do these stand for?,,,"mulanhe
+"
+941541226,4/27/2016 08:17:48,false,1970014490,,4/27/2016 08:17:31,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,F0 and RMS,What do these stand for?,,,"mulanhe
+"
+941541226,4/27/2016 08:19:18,false,1970015341,,4/27/2016 08:17:32,false,elite,0.5333,29829226,IDN,08,Surabaya,115.178.238.113,Upvote comment,F0 and RMS,What do these stand for?,,,"mulanhe
+"
+941541226,4/27/2016 08:19:44,false,1970015532,,4/27/2016 08:17:23,false,clixsense,0.56,19298085,IND,02,Hyderabad,183.82.227.84,Upvote comment,F0 and RMS,What do these stand for?,,,"mulanhe
+"
+941541227,4/27/2016 08:18:10,false,1970014665,,4/27/2016 08:17:58,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic,,,"mulanhe
+"
+941541227,4/27/2016 08:18:22,false,1970014759,,4/27/2016 08:17:49,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic,,,"mulanhe
+"
+941541227,4/27/2016 08:20:05,false,1970015767,,4/27/2016 08:19:37,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,"Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic,,,"mulanhe
+"
+941541227,4/27/2016 08:20:22,false,1970015946,,4/27/2016 08:17:55,false,clixsense,0.75,34319651,ARE,03,Dubai,83.110.232.180,Upvote comment,"Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic,,,"mulanhe
+"
+941541227,4/27/2016 08:23:17,false,1970017351,,4/27/2016 08:17:58,false,getpaid,0.68,36358931,VNM,20,Ho Chi Minh City,113.173.97.145,Downvote comment,"Our  earlier  work  on  this  cor-pus  showed  that  it  is  possible  to  detect  whetherspeakers are perceived as flirtatious, awkward, orfriendly with reasonable accuracy",So they have another paper on this topic,,,"mulanhe
+"
+941541228,4/27/2016 08:17:05,false,1970014063,,4/27/2016 08:16:38,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.,,,"gaga
+"
+941541228,4/27/2016 08:17:33,false,1970014344,,4/27/2016 08:16:48,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.,,,"gaga
+"
+941541228,4/27/2016 08:17:57,false,1970014536,,4/27/2016 08:16:49,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.,,,"gaga
+"
+941541228,4/27/2016 08:19:47,false,1970015534,,4/27/2016 08:16:51,false,elite,0.6,36378612,BIH,01,Tuzla,109.175.20.211,Upvote comment,human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.,,,"gaga
+"
+941541228,4/27/2016 08:20:06,false,1970015775,,4/27/2016 08:18:04,false,elite,0.6,32336418,RUS,78,Tyumen,85.15.189.13,Upvote comment,human  perceptionand human interaction and provides a frameworkfor understanding why humans perform so poorlyon intention prediction,so essentially classifiers and ML algorithms have better identified human interaction (flirting) than humans have. the general conclusion has many implications for human psychology and the ability for ML to make judgments about human psychology.,,,"gaga
+"
+941541229,4/27/2016 08:18:35,false,1970014845,,4/27/2016 08:18:20,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women,,,"gaga
+"
+941541229,4/27/2016 08:18:45,false,1970014992,,4/27/2016 08:18:23,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women,,,"gaga
+"
+941541229,4/27/2016 08:19:05,false,1970015183,,4/27/2016 08:18:17,false,elite,0.7167,34744709,VNM,44,Hanoi,117.7.208.167,Upvote comment,"expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women,,,"gaga
+"
+941541229,4/27/2016 08:20:09,false,1970015792,,4/27/2016 08:18:15,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Upvote comment,"expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women,,,"gaga
+"
+941541229,4/27/2016 08:25:18,false,1970018264,,4/27/2016 08:18:39,false,clixsense,0.6,32228468,ESP,55,Burgos,83.43.224.119,Upvote comment,"expanded  pitch  range  (lower  pitch  min,  higherpitch max), laugh more, use moreIandwell, userepair questions but not other kinds of questions,use more sexual terms, use far less appreciationsand  backchannels,  and  use  fewer,  longer  turns,with more words in general",parallel finding for women,,,"gaga
+"
+941541230,4/27/2016 08:18:10,false,1970014689,,4/27/2016 08:17:58,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation,,,"gaga
+"
+941541230,4/27/2016 08:18:22,false,1970014750,,4/27/2016 08:17:49,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation,,,"gaga
+"
+941541230,4/27/2016 08:20:05,false,1970015766,,4/27/2016 08:19:37,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation,,,"gaga
+"
+941541230,4/27/2016 08:20:22,false,1970015943,,4/27/2016 08:17:55,false,clixsense,0.75,34319651,ARE,03,Dubai,83.110.232.180,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation,,,"gaga
+"
+941541230,4/27/2016 08:23:17,false,1970017355,,4/27/2016 08:17:58,false,getpaid,0.68,36358931,VNM,20,Ho Chi Minh City,113.173.97.145,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe",basically what is indicative of male flirtation,,,"gaga
+"
+941541231,4/27/2016 08:17:25,false,1970014254,,4/27/2016 08:17:05,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that,,,"gaga
+"
+941541231,4/27/2016 08:17:26,false,1970014256,,4/27/2016 08:17:08,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that,,,"gaga
+"
+941541231,4/27/2016 08:17:32,false,1970014330,,4/27/2016 08:17:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that,,,"gaga
+"
+941541231,4/27/2016 08:18:15,false,1970014726,,4/27/2016 08:17:19,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that,,,"gaga
+"
+941541231,4/27/2016 08:22:30,false,1970016960,,4/27/2016 08:17:22,false,clixsense,0.7,7837812,SRB,00,Belgrade,178.148.62.255,Upvote comment,we use k-fold crossvalidation  to  learn  our  model  and  evaluate  ourmodel,important bc this is how they want to model the brain. this section delves deeper into that,,,"gaga
+"
+941541232,4/27/2016 08:16:38,false,1970013847,,4/27/2016 08:16:04,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification,,,"gaga
+"
+941541232,4/27/2016 08:16:47,false,1970013930,,4/27/2016 08:16:02,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification,,,"gaga
+"
+941541232,4/27/2016 08:17:05,false,1970014068,,4/27/2016 08:16:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification,,,"gaga
+"
+941541232,4/27/2016 08:17:07,false,1970014083,,4/27/2016 08:15:53,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification,,,"gaga
+"
+941541232,4/27/2016 08:49:18,false,1970030304,,4/27/2016 08:46:31,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Upvote comment,We  did  this  to  avoid  imposing  aprior on any of the features based on their numer-ical values,important factor in method of classification,,,"gaga
+"
+941541233,4/27/2016 08:18:10,false,1970014675,,4/27/2016 08:17:58,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,we trained bi-nary classifiers to predict both perception and in-tention,what they did during research,,,"gaga
+"
+941541233,4/27/2016 08:18:22,false,1970014756,,4/27/2016 08:17:49,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,we trained bi-nary classifiers to predict both perception and in-tention,what they did during research,,,"gaga
+"
+941541233,4/27/2016 08:20:05,false,1970015765,,4/27/2016 08:19:37,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,we trained bi-nary classifiers to predict both perception and in-tention,what they did during research,,,"gaga
+"
+941541233,4/27/2016 08:20:22,false,1970015939,,4/27/2016 08:17:55,false,clixsense,0.75,34319651,ARE,03,Dubai,83.110.232.180,Upvote comment,we trained bi-nary classifiers to predict both perception and in-tention,what they did during research,,,"gaga
+"
+941541233,4/27/2016 08:23:17,false,1970017352,,4/27/2016 08:17:58,false,getpaid,0.68,36358931,VNM,20,Ho Chi Minh City,113.173.97.145,Upvote comment,we trained bi-nary classifiers to predict both perception and in-tention,what they did during research,,,"gaga
+"
+941541234,4/27/2016 08:18:33,false,1970014825,,4/27/2016 08:18:26,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted,,,"gaga
+"
+941541234,4/27/2016 08:18:35,false,1970014848,,4/27/2016 08:18:20,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted,,,"gaga
+"
+941541234,4/27/2016 08:19:35,false,1970015484,,4/27/2016 08:18:28,false,clixsense,1.0,34769228,VEN,23,Maracaibo,190.75.199.35,Upvote comment,report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted,,,"gaga
+"
+941541234,4/27/2016 08:19:47,false,1970015551,,4/27/2016 08:18:30,false,clixsense,1.0,37141229,VEN,04,Maracay,186.92.140.133,Upvote comment,report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted,,,"gaga
+"
+941541234,4/27/2016 08:25:18,false,1970018268,,4/27/2016 08:18:39,false,clixsense,0.6,32228468,ESP,55,Burgos,83.43.224.119,Downvote comment,report how of-ten their date’s speech reflected different conver-sational  styles,how the research was conducted,,,"gaga
+"
+941541235,4/27/2016 08:17:42,false,1970014411,,4/27/2016 08:17:27,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?,,,"lsilb
+"
+941541235,4/27/2016 08:17:48,false,1970014488,,4/27/2016 08:17:31,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,"The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?,,,"lsilb
+"
+941541235,4/27/2016 08:17:48,false,1970014492,,4/27/2016 08:17:25,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?,,,"lsilb
+"
+941541235,4/27/2016 08:19:18,false,1970015336,,4/27/2016 08:17:32,false,elite,0.5333,29829226,IDN,08,Surabaya,115.178.238.113,Upvote comment,"The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?,,,"lsilb
+"
+941541235,4/27/2016 08:19:44,false,1970015535,,4/27/2016 08:17:23,false,clixsense,0.56,19298085,IND,02,Hyderabad,183.82.227.84,Downvote comment,"The features for a conversation side thus indicatewhether a speaker who talks a lot, laughs, is moredisfluent, has higher F0, etc.",Are certain features not always subjective?,,,"lsilb
+"
+941541236,4/27/2016 08:18:31,false,1970014789,,4/27/2016 08:18:16,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical",,,"lsilb
+"
+941541236,4/27/2016 08:18:35,false,1970014849,,4/27/2016 08:18:20,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical",,,"lsilb
+"
+941541236,4/27/2016 08:18:45,false,1970014986,,4/27/2016 08:18:23,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical",,,"lsilb
+"
+941541236,4/27/2016 08:19:05,false,1970015197,,4/27/2016 08:18:17,false,elite,0.7167,34744709,VNM,44,Hanoi,117.7.208.167,Downvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical",,,"lsilb
+"
+941541236,4/27/2016 08:20:09,false,1970015789,,4/27/2016 08:18:15,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Upvote comment,"Men who say they are flirting ask more ques-tions, and use moreyouandwe. They laugh more,and  use  more  sexual,  anger,  and  negative  emo-tional words.  Prosodically they speak faster, withhigher  pitch,  but  quieter  (lower  intensity  min)","This is interesting, and pretty straightforward and logical",,,"lsilb
+"
+941541237,4/27/2016 08:17:42,false,1970014409,,4/27/2016 08:17:27,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder,,,"lsilb
+"
+941541237,4/27/2016 08:17:48,false,1970014484,,4/27/2016 08:17:25,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder,,,"lsilb
+"
+941541237,4/27/2016 08:17:48,false,1970014487,,4/27/2016 08:17:31,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder,,,"lsilb
+"
+941541237,4/27/2016 08:19:18,false,1970015334,,4/27/2016 08:17:32,false,elite,0.5333,29829226,IDN,08,Surabaya,115.178.238.113,Upvote comment,SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder,,,"lsilb
+"
+941541237,4/27/2016 08:19:44,false,1970015540,,4/27/2016 08:17:23,false,clixsense,0.56,19298085,IND,02,Hyderabad,183.82.227.84,Upvote comment,SpeedDate Cor-pus,it would also be interesting to look into social media platform dates such as tinder,,,"lsilb
+"
+941541238,4/27/2016 08:17:57,false,1970014533,,4/27/2016 08:17:43,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates,,,"crowdworker11201
+"
+941541238,4/27/2016 08:18:12,false,1970014700,,4/27/2016 08:17:34,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates,,,"crowdworker11201
+"
+941541238,4/27/2016 08:18:13,false,1970014701,,4/27/2016 08:17:33,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,"The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates,,,"crowdworker11201
+"
+941541238,4/27/2016 08:18:15,false,1970014723,,4/27/2016 08:17:45,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,"The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates,,,"crowdworker11201
+"
+941541238,4/27/2016 08:24:47,false,1970018014,,4/27/2016 08:17:49,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,"The current studyfocuses on 946 of these, for which we have com-plete audio, transcript, and survey information",This study is based off of 946 speed dates,,,"crowdworker11201
+"
+941541239,4/27/2016 08:18:31,false,1970014788,,4/27/2016 08:18:16,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,"The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.,,,"crowdworker11201
+"
+941541239,4/27/2016 08:18:35,false,1970014846,,4/27/2016 08:18:20,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.,,,"crowdworker11201
+"
+941541239,4/27/2016 08:18:45,false,1970014989,,4/27/2016 08:18:23,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,"The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.,,,"crowdworker11201
+"
+941541239,4/27/2016 08:19:05,false,1970015194,,4/27/2016 08:18:17,false,elite,0.7167,34744709,VNM,44,Hanoi,117.7.208.167,Upvote comment,"The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.,,,"crowdworker11201
+"
+941541239,4/27/2016 08:20:09,false,1970015786,,4/27/2016 08:18:15,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Upvote comment,"The  corpus  is  basedon  three  speed-dating  sessions  run  at  an  Ameri-can  university  in  2005,  inspired  by  prior  speed-dating research (Madan et al.,  2005).   The grad-uate student participants volunteered to be in thestudy and were promised emails of persons withwhom  they  reported  mutual  liking.",They used a relatively small dataset for this experiment. Only three speed dating sessions.,,,"crowdworker11201
+"
+941541240,4/27/2016 08:18:25,false,1970014767,,4/27/2016 08:18:11,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,Thanks for the heads up!,,,"crowdworker11201
+"
+941541240,4/27/2016 08:18:32,false,1970014812,,4/27/2016 08:17:58,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Downvote comment,null,Thanks for the heads up!,,,"crowdworker11201
+"
+941541240,4/27/2016 08:18:36,false,1970014875,,4/27/2016 08:18:14,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,null,Thanks for the heads up!,,,"crowdworker11201
+"
+941541240,4/27/2016 08:18:55,false,1970015097,,4/27/2016 08:18:14,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,null,Thanks for the heads up!,,,"crowdworker11201
+"
+941541240,4/27/2016 08:21:52,false,1970016697,,4/27/2016 08:18:09,false,clixsense,0.68,32332502,RUS,06,Arkhangelsk,62.192.252.70,Upvote comment,null,Thanks for the heads up!,,,"crowdworker11201
+"
+941541241,4/27/2016 08:17:25,false,1970014250,,4/27/2016 08:17:05,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,null,Fascinating!,,,"agraffy
+"
+941541241,4/27/2016 08:17:26,false,1970014259,,4/27/2016 08:17:08,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,Fascinating!,,,"agraffy
+"
+941541241,4/27/2016 08:17:32,false,1970014327,,4/27/2016 08:17:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,null,Fascinating!,,,"agraffy
+"
+941541241,4/27/2016 08:18:15,false,1970014716,,4/27/2016 08:17:19,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Downvote comment,null,Fascinating!,,,"agraffy
+"
+941541241,4/27/2016 08:22:30,false,1970016963,,4/27/2016 08:17:22,false,clixsense,0.7,7837812,SRB,00,Belgrade,178.148.62.255,Downvote comment,null,Fascinating!,,,"agraffy
+"
+941541242,4/27/2016 08:17:57,false,1970014526,,4/27/2016 08:17:43,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,We ran our binary classification exper-iments to predict this output variable,Interesting!,,,"agraffy
+"
+941541242,4/27/2016 08:18:12,false,1970014696,,4/27/2016 08:17:34,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,We ran our binary classification exper-iments to predict this output variable,Interesting!,,,"agraffy
+"
+941541242,4/27/2016 08:18:13,false,1970014699,,4/27/2016 08:17:33,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,We ran our binary classification exper-iments to predict this output variable,Interesting!,,,"agraffy
+"
+941541242,4/27/2016 08:18:15,false,1970014721,,4/27/2016 08:17:45,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,We ran our binary classification exper-iments to predict this output variable,Interesting!,,,"agraffy
+"
+941541242,4/27/2016 08:24:47,false,1970018006,,4/27/2016 08:17:49,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Upvote comment,We ran our binary classification exper-iments to predict this output variable,Interesting!,,,"agraffy
+"
+941541243,4/27/2016 08:16:38,false,1970013845,,4/27/2016 08:16:04,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,"n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words,,,"davidcao
+"
+941541243,4/27/2016 08:16:47,false,1970013932,,4/27/2016 08:16:02,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words,,,"davidcao
+"
+941541243,4/27/2016 08:17:05,false,1970014064,,4/27/2016 08:16:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Upvote comment,"n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words,,,"davidcao
+"
+941541243,4/27/2016 08:17:07,false,1970014085,,4/27/2016 08:15:53,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Upvote comment,"n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words,,,"davidcao
+"
+941541243,4/27/2016 09:46:47,false,1970060315,,4/27/2016 09:46:37,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Upvote comment,"n pitch rangeRMS MINminimum  amplitude  per  turn,  averagedover turnsRMS MIN SDstandard deviation from RMS minRMS MAXmaximum  amplitude  per  turn,  averagedover turnsRMS MAX SDstandard deviation from RMS maxRMS MEANmean  amplitude  per  turn,  averaged  overturnsRMS MEAN SDstandard deviation from RMS meanTURN DURduration of turn in seconds, averaged overturnsTIMEtotal time for a speaker for a conversationside, in secondsRATE OFSPEECHnumber of words in turn divided by dura-tion of turn in seconds, averaged over turnsTable  1:   Prosodic  features  from  Jurafsky  et  al.(2009) for each conversation side, extracted usingPraat from the hand-segmented turns of each side.hand-labeled  Switchboard  corpus  of  dialog  acts.Collaborative completions, turns where a speakercompletes the utterance begun by the alter,  weredetected by finding sentences for which the firstword  of  the  speaker  was  extremely  predictablefrom the last two words of the previous speaker,based on a trigram grammar trained on the Tree-bank 3 Switchboard transcripts.  Laughter, disflu-encies,  and overlap were all marked in the tran-scripts by the transcribers.4.3    Lexical FeaturesWe drew our lexical features from the LIWC lex-icons  of  Pennebaker  et  al.  (2007),  the  standardfor  social  psychological  analysis  of  lexical  fea-tures.   We  chose  ten  LIWC  categories  that  haveproven useful in detecting personality-related fea-tures  (Mairesse  et  al.,  2007):Anger,  Assent,  In-gest,  Insight,  Negemotion,  Sexual,  Swear,  I,  We,andYou.  We also added two new lexical features:“past  tense  auxiliary”,  a  heuristic  for  automati-cally detecting narrative or story-telling behavior,andMetadate, for discussion about the speed-dateitself. The features are summarized in Table 3.4.4    Inducing New Lexical FeaturesIn Jurafsky et al. (2009) we found the LIWC lex-ical features less useful in detecting social mean-ing than the dialogue and prosodic features, per-haps because lexical cues to flirtation lie in differ-ent classes of words than previously investigated.We therefore investigated the induction of lexicalfeatures from the speed-date corpus, using a prob-abilisitic graphical model.We  began  with  a  pilot  investigation  to  seewhether lexical cues were likely to be useful; witha  small  corpus,  it  is  possible  that  lexical  fea-tures  are  simply  too  sparse  to  play  a  role  giventhe  limited  data.    The  pilot  was  based  on  us-ing Naive Bayes with word existence features (bi-nomial  Naive  Bayes).   Naive  Bayes  assumes  allfeatures  are  conditionally  independent  given  theclass,  and  is  known  to  perform  well  with  smallamounts of data (Rish,  2001).  Our Naive Bayespilot system performed above chance, suggestingthat lexical cues are indeed informative.A  simple  approach  to  including  lexical  fea-tures  in  our  more  general  classification  systemwould be to include the word counts in a high di-mensional feature vector with our other features.This  method,  unfortunately,  would  suffer  fromthe  well-known",lots of words,,,"davidcao
+"
+941541244,4/27/2016 08:17:05,false,1970014065,,4/27/2016 08:16:38,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,"BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same,,,"davidcao
+"
+941541244,4/27/2016 08:17:33,false,1970014343,,4/27/2016 08:16:48,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,"BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same,,,"davidcao
+"
+941541244,4/27/2016 08:17:57,false,1970014527,,4/27/2016 08:16:49,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Upvote comment,"BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same,,,"davidcao
+"
+941541244,4/27/2016 08:19:47,false,1970015538,,4/27/2016 08:16:51,false,elite,0.6,36378612,BIH,01,Tuzla,109.175.20.211,Upvote comment,"BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same,,,"davidcao
+"
+941541244,4/27/2016 08:20:06,false,1970015774,,4/27/2016 08:18:04,false,elite,0.6,32336418,RUS,78,Tyumen,85.15.189.13,Downvote comment,"BACKCHANNELSnumber of backchannel utterances in side (Uh-huh.,Yeah.,Right.,Oh, okay.)",same,,,"davidcao
+"
+941541245,4/27/2016 08:18:31,false,1970014785,,4/27/2016 08:18:16,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary,,,"davidcao
+"
+941541245,4/27/2016 08:18:45,false,1970014990,,4/27/2016 08:18:23,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Upvote comment,p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary,,,"davidcao
+"
+941541245,4/27/2016 08:19:05,false,1970015191,,4/27/2016 08:18:17,false,elite,0.7167,34744709,VNM,44,Hanoi,117.7.208.167,Downvote comment,p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary,,,"davidcao
+"
+941541245,4/27/2016 08:20:09,false,1970015790,,4/27/2016 08:18:15,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Downvote comment,p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary,,,"davidcao
+"
+941541245,4/27/2016 08:25:18,false,1970018267,,4/27/2016 08:18:39,false,clixsense,0.6,32228468,ESP,55,Burgos,83.43.224.119,Downvote comment,p(vijh) =exp(biasi+Xjhjwij)Xk2Kexp(biask+Xjvjwkj)(1),Scary,,,"davidcao
+"
+941541246,4/27/2016 08:16:38,false,1970013851,,4/27/2016 08:16:04,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,null,"Hello, world!",,,"sumitz
+"
+941541246,4/27/2016 08:16:47,false,1970013935,,4/27/2016 08:16:02,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,null,"Hello, world!",,,"sumitz
+"
+941541246,4/27/2016 08:17:05,false,1970014069,,4/27/2016 08:16:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,null,"Hello, world!",,,"sumitz
+"
+941541246,4/27/2016 08:17:07,false,1970014082,,4/27/2016 08:15:53,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,"Hello, world!",,,"sumitz
+"
+941541246,4/27/2016 08:49:18,false,1970030302,,4/27/2016 08:46:31,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Downvote comment,null,"Hello, world!",,,"sumitz
+"
+941541247,4/27/2016 08:17:57,false,1970014530,,4/27/2016 08:17:43,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,null,Booksy!,,,"sumitz
+"
+941541247,4/27/2016 08:18:12,false,1970014695,,4/27/2016 08:17:34,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,null,Booksy!,,,"sumitz
+"
+941541247,4/27/2016 08:18:13,false,1970014708,,4/27/2016 08:17:33,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,null,Booksy!,,,"sumitz
+"
+941541247,4/27/2016 08:18:15,false,1970014724,,4/27/2016 08:17:45,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Downvote comment,null,Booksy!,,,"sumitz
+"
+941541247,4/27/2016 08:24:47,false,1970018007,,4/27/2016 08:17:49,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Downvote comment,null,Booksy!,,,"sumitz
+"
+941541248,4/27/2016 08:16:38,false,1970013844,,4/27/2016 08:16:04,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,t will display only when c,test note,,,"sumitz
+"
+941541248,4/27/2016 08:16:47,false,1970013937,,4/27/2016 08:16:02,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Upvote comment,t will display only when c,test note,,,"sumitz
+"
+941541248,4/27/2016 08:17:05,false,1970014071,,4/27/2016 08:16:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,t will display only when c,test note,,,"sumitz
+"
+941541248,4/27/2016 08:17:07,false,1970014087,,4/27/2016 08:15:53,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,t will display only when c,test note,,,"sumitz
+"
+941541248,4/27/2016 08:49:18,false,1970030305,,4/27/2016 08:46:31,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Downvote comment,t will display only when c,test note,,,"sumitz
+"
+941541249,4/27/2016 08:18:31,false,1970014790,,4/27/2016 08:18:16,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Downvote comment,null,This is page note.,,,"sumitz
+"
+941541249,4/27/2016 08:18:35,false,1970014847,,4/27/2016 08:18:20,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Downvote comment,null,This is page note.,,,"sumitz
+"
+941541249,4/27/2016 08:18:45,false,1970014988,,4/27/2016 08:18:23,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,null,This is page note.,,,"sumitz
+"
+941541249,4/27/2016 08:19:05,false,1970015185,,4/27/2016 08:18:17,false,elite,0.7167,34744709,VNM,44,Hanoi,117.7.208.167,Downvote comment,null,This is page note.,,,"sumitz
+"
+941541249,4/27/2016 08:20:09,false,1970015791,,4/27/2016 08:18:15,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Downvote comment,null,This is page note.,,,"sumitz
+"
+941541250,4/27/2016 08:17:25,false,1970014251,,4/27/2016 08:17:05,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,ives. To them we o,sadads,,,"sumitz
+"
+941541250,4/27/2016 08:17:26,false,1970014255,,4/27/2016 08:17:08,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,ives. To them we o,sadads,,,"sumitz
+"
+941541250,4/27/2016 08:17:32,false,1970014333,,4/27/2016 08:17:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,ives. To them we o,sadads,,,"sumitz
+"
+941541250,4/27/2016 08:18:15,false,1970014718,,4/27/2016 08:17:19,false,clixsense,0.8727,34805760,BGR,65,Yambol,87.121.119.118,Downvote comment,ives. To them we o,sadads,,,"sumitz
+"
+941541250,4/27/2016 08:22:30,false,1970016959,,4/27/2016 08:17:22,false,clixsense,0.7,7837812,SRB,00,Belgrade,178.148.62.255,Downvote comment,ives. To them we o,sadads,,,"sumitz
+"
+941541251,4/27/2016 08:16:38,false,1970013848,,4/27/2016 08:16:04,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,an infinite amo,asdasd,,,"sumitz
+"
+941541251,4/27/2016 08:16:47,false,1970013928,,4/27/2016 08:16:02,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,an infinite amo,asdasd,,,"sumitz
+"
+941541251,4/27/2016 08:17:05,false,1970014072,,4/27/2016 08:16:06,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,an infinite amo,asdasd,,,"sumitz
+"
+941541251,4/27/2016 08:17:07,false,1970014084,,4/27/2016 08:15:53,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,an infinite amo,asdasd,,,"sumitz
+"
+941541251,4/27/2016 08:49:18,false,1970030307,,4/27/2016 08:46:31,false,elite,0.8778,33927390,SRB,00,Belgrade,109.93.31.182,Downvote comment,an infinite amo,asdasd,,,"sumitz
+"
+941541252,4/27/2016 08:18:10,false,1970014691,,4/27/2016 08:17:58,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,he same rat,sad,,,"sumitz
+"
+941541252,4/27/2016 08:18:22,false,1970014761,,4/27/2016 08:17:49,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,he same rat,sad,,,"sumitz
+"
+941541252,4/27/2016 08:20:05,false,1970015768,,4/27/2016 08:19:37,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,he same rat,sad,,,"sumitz
+"
+941541252,4/27/2016 08:20:22,false,1970015945,,4/27/2016 08:17:55,false,clixsense,0.75,34319651,ARE,03,Dubai,83.110.232.180,Downvote comment,he same rat,sad,,,"sumitz
+"
+941541252,4/27/2016 08:23:17,false,1970017354,,4/27/2016 08:17:58,false,getpaid,0.68,36358931,VNM,20,Ho Chi Minh City,113.173.97.145,Downvote comment,he same rat,sad,,,"sumitz
+"
+941541253,4/27/2016 08:17:05,false,1970014066,,4/27/2016 08:16:38,false,instagc,0.8028,13581319,USA,IL,Waltonville,208.70.36.12,Downvote comment,null,Sup WIMBO,,,"sumitz
+"
+941541253,4/27/2016 08:17:33,false,1970014341,,4/27/2016 08:16:48,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,null,Sup WIMBO,,,"sumitz
+"
+941541253,4/27/2016 08:17:57,false,1970014529,,4/27/2016 08:16:49,false,neodev,0.9,37145400,JOR,"","",212.34.4.21,Downvote comment,null,Sup WIMBO,,,"sumitz
+"
+941541253,4/27/2016 08:19:47,false,1970015536,,4/27/2016 08:16:51,false,elite,0.6,36378612,BIH,01,Tuzla,109.175.20.211,Upvote comment,null,Sup WIMBO,,,"sumitz
+"
+941541253,4/27/2016 08:20:06,false,1970015773,,4/27/2016 08:18:04,false,elite,0.6,32336418,RUS,78,Tyumen,85.15.189.13,Downvote comment,null,Sup WIMBO,,,"sumitz
+"
+941541254,4/27/2016 08:17:57,false,1970014528,,4/27/2016 08:17:43,false,clixsense,0.8978,19484033,PHL,D9,Makati,119.92.172.162,Downvote comment,rreitmai,ss,,,"sumitz
+"
+941541254,4/27/2016 08:18:13,false,1970014698,,4/27/2016 08:17:33,false,clixsense,0.925,32479935,IND,25,Erode,59.96.47.65,Downvote comment,rreitmai,ss,,,"sumitz
+"
+941541254,4/27/2016 08:18:12,false,1970014704,,4/27/2016 08:17:34,false,neodev,0.875,35603616,IND,28,Kolkata,202.142.70.157,Downvote comment,rreitmai,ss,,,"sumitz
+"
+941541254,4/27/2016 08:18:15,false,1970014720,,4/27/2016 08:17:45,false,elite,0.7298,25437208,IND,23,Patiala,117.220.79.10,Upvote comment,rreitmai,ss,,,"sumitz
+"
+941541254,4/27/2016 08:24:47,false,1970018012,,4/27/2016 08:17:49,false,cf_internal,0.695,37046519,USA,PA,Philadelphia,165.123.223.180,Downvote comment,rreitmai,ss,,,"sumitz
+"

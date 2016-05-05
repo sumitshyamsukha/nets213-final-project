@@ -7,12 +7,16 @@
         <h1 style="float: center; text-align: center"> Booksy </h1>
         <div class="container"> 
         <h2> User Ratings </h2>
+        <ul class="list-group">
         {% for key in ratings %}
-            <li> 
-                <a href="https://hypothes.is/stream?q={{ key[0] }}"> {{ key[0] }} </a> 
-                <p> Confidence Rating: {{ key[1] }} </p> 
+            <li class="list-group-item"> 
+                <div class="well well-sm">
+                     <a href="https://hypothes.is/stream?q={{ key[0] }}"> {{ key[0] }} </a> 
+                </div>
+               <span class="label label-info"> Confidence Rating: {{ key[1] }} </span>
             </li>
         {% endfor %}
+        </ul>
         <h2> Click <a href="/"> here </a> to go back! </h2>
         </div>
     </body>

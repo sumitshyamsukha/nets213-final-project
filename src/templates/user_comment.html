@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <title> Booksy </title>
+    <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+    </head>
+    <body>
+        <h1 style="float: center; text-align: center"> Booksy </h1>
+        <div class="container">
+        
+        <h2> Submit Comment Ratings </h2>
+        
+        <form action="" method="POST">
+        <ul class="list-group">
+        {% if comments != None %}
+        {% for user, comment in comments.iteritems() %}
+            <li class="list-group-item"> 
+            <h4 class="list-group-item-heading"> {{ user }} </h4>
+            <ul class="list-group">
+            {% if comment != None %}
+            {% for c in comment %}
+            <li class="list-group-item">
+            {{ c[1] }}
+            <fieldset id="{{comment}}">
+                <input type="radio" name="{{comment}}" value="up"> Upvote <br>
+                <input type="radio" name="{{comment}}" value="down"> Downvote <br>
+            </fieldset>
+            </li>
+            {% endfor %}
+            {% endif %}
+             </ul>
+            </li>
+        {% endfor %}
+        {% endif %}
+        </ul>
+        <input type="submit" name="my-form" value="Submit">
+        </form>
+        <h2> Click <a href="/"> here </a> to go back! </h2>
+        </div>
+
+    </body>
+</html>
